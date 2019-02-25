@@ -56,9 +56,10 @@
     <section id="intro" class="home-video text-light">
 		<div class="home-video-wrapper">
 
-		<div class="homevideo-container">
-           <div id="P1" class="bg-player" style="display:block; margin: auto; background: rgba(0,0,0,0.5)" data-property="{videoURL:'http://youtu.be/mroiVdC7H10',containment:'.homevideo-container', quality: 'hd720', showControls: false, autoPlay:true, mute:true, startAt:0, opacity:1}"></div>
-		</div>
+		<video autoplay muted loop id = "myVideo" style="width:100%; object-fit:fill; filter:alpha(opacity=50)" >
+           <source src = "video/key_budapest.mp4" type = "video/mp4">
+		</video>
+        <\div>
 		<div class="overlay">
 			<div class="text-center video-caption">
 				<div class="wow bounceInDown" data-wow-offset="0" data-wow-delay="0.8s">
@@ -81,14 +82,7 @@
         <nav class="navbar navbar-custom" role="navigation">
                               <div class="container">
                                     <div class="row">
-                                          <div class="col-md-2 mob-logo">
-                                                <div class="row">
-                                                      <div class="site-logo">
-                                                            <a href="index.html"><img src="img/logo-dark.png" alt="" /></a>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          
+                                        
 
                                           <div class="col-md-10 mob-menu">
                                                 <div class="row">
@@ -102,8 +96,8 @@
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav navbar-right">
                                                                   <li class="active"><a href="#intro">Home</a></li>
-                                                                  <li><a href="#about">About Us</a></li>
-																   <li><a href="#service">Services</a></li>
+                                                                  <li><a href="#about">About me</a></li>
+																   <li><a href="#lab">lab</a></li>
                                                                   <li><a href="#works">Works</a></li>				                                                                  
                                                                   
                                                                   <li><a href="#contact">Contact</a></li>
@@ -133,9 +127,42 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
 					<div class="section-heading text-center">
-					<h2 class="h-bold">About</h2>
+					<h2 class="h-bold">about me</h2>
 					<div class="divider-header"></div>
 					<p>Lorem ipsum dolor sit amet, agam perfecto sensibus usu at duo ut iriure.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+	</section>
+	<!-- /Section: about -->
+	
+	<!-- Section: parallax 1
+	<section id="parallax1" class="home-section parallax text-light" data-stellar-background-ratio="0.5">	
+           <div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="text-center">
+						<h2 class="big-heading highlight-dark wow bounceInDown" data-wow-delay="0.2s">We start from pixel perfect pattern</h2>
+						</div>
+					</div>				
+				</div>
+            </div>
+	</section>	 -->	
+	
+	<!-- Section: lab -->
+        <section id="lab" class="home-section color-dark bg-white">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2 class="h-bold">lab</h2>
+					<div class="divider-header"></div>
+					<p> introduce my lab-family </p>
 					</div>
 					</div>
 				</div>
@@ -217,111 +244,8 @@
 		</div>
 		</div>
 	</section>
-	<!-- /Section: about -->
-	
-	<!-- Section: parallax 1 -->	
-	<section id="parallax1" class="home-section parallax text-light" data-stellar-background-ratio="0.5">	
-           <div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="text-center">
-						<h2 class="big-heading highlight-dark wow bounceInDown" data-wow-delay="0.2s">We start from pixel perfect pattern</h2>
-						</div>
-					</div>				
-				</div>
-            </div>
-	</section>	
-	
-	<!-- Section: services -->
-    <section id="service" class="home-section color-dark bg-white">
-		<div class="container marginbot-50">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
-					<div class="section-heading text-center">
-					<h2 class="h-bold">Services</h2>
-					<div class="divider-header"></div>
-					<p>Lorem ipsum dolor sit amet, agam perfecto sensibus usu at duo ut iriure.</p>
-					</div>
-					</div>
-				</div>
-			</div>
+	<!-- /Section: lab -->
 
-		</div>
-
-		<div class="text-center">
-		<div class="container">
-
-        <div class="row">
-            <div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow fadeInLeft" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="pe-7s-monitor pe-5x"></span> 
-					</div>
-					<div class="service-desc">						
-						<h5>Web Design</h5>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="pe-7s-camera pe-5x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Photography</h5>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="pe-7s-note pe-5x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Graphic design</h5>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow fadeInRight" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="pe-7s-phone pe-5x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Mobile apps</h5>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-        </div>		
-		</div>
-		</div>
-	</section>
-	<!-- /Section: services -->
 	
 	<!-- Section: parallax 2 -->	
 	<section id="parallax2" class="home-section parallax text-light" data-stellar-background-ratio="0.5">	
